@@ -4,10 +4,17 @@
 
 - 데이터 일관성
   - 정족수 합의(Quorum Consensus) 프로토콜
+    - 읽기/쓰기 연산이 성공하기 위해선 지정한 수만큼의 서버로부터 응답을 받아야 한다
+    - R = 1, W = N: 빠른 읽기
+    - R = N, W = 1: 빠른 쓰기
+    - R + W > N: 강한 일관성
+    - R + W < N: 약한 일관성
     - 느슨한 정족수(sloppy quorum) 접근법
   - 강한 일관성(strong consistency)
   - 약한 일관성(weak consistency)
-  - **결과적 일관성(eventual consistency)**
+  - **결과적 일관성(eventual consistency)**: 약한 일관성의 한 종류로, 갱신 결과가 결국에는 모든 사본에 반영(동기화)됨
+    - 버저닝(versioning)
+    - 벡터 시계(vector clock)
 
 ## 인상 깊은 내용
 
