@@ -14,7 +14,7 @@
   - 약한 일관성(weak consistency)
   - **결과적 일관성(eventual consistency)**: 약한 일관성의 한 종류로, 갱신 결과가 결국에는 모든 사본에 반영(동기화)됨
     - 버저닝(versioning)
-    - 벡터 시계(vector clock)
+    - 벡터 시계(vector clock): 모든 구성요소의 값이 같거나 큰지 확인. 만약 하나의 요소는 크거나 같은데, 하나의 요소는 작다면 데이터 충돌이 발생한 것
 
 ## 인상 깊은 내용
 
